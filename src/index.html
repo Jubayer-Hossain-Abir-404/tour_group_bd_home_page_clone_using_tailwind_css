@@ -1,0 +1,480 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+  <link href="../slick/slick.css" rel="stylesheet">
+  <link href="../slick/slick-theme.css" rel="stylesheet">
+  
+  
+  <title>Tour Group BD</title>
+</head>
+<body>
+    <header class="w-full fixed z-30">
+        <nav id="mainNav" class="bg-white lg:bg-transparent flex flex-wrap md:flex-nowrap justify-between items-center lg:m-8 m-0 lg:px-0 px-4 lg:py-0 py-1">
+            <div id="mobNav"class="flex justify-between items-center lg:w-auto w-full">
+                <span>
+                    <a id="logo" href="#">
+                        <img class="h-16" alt="tourgroup_bd" src="../assets/tourgroupbd-logo-2.png"
+                        >
+                     </a>
+                </span>
+                 <span class="text-3xl text-red-400 cursor-pointer lg:hidden block">
+                    <ion-icon name="menu" id="main_menu"></ion-icon>
+                </span>
+            </div>
+            
+            
+            <div>
+                <div class="flex justify-between items-center lg:static absolute">
+                    <ul class="md:flex md:flex-nowrap md:items-center z-[-1] md:z-auto lg:static absolute  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                        <li class="mx-4 my-6 md:my-0 lg:block hidden cursor-pointer">
+                            HOME
+                        </li>
+                        <li class="mx-4 my-6 md:my-0 lg:block hidden cursor-pointer">
+                            <div id="inbound_">Inbound Events</div>
+                            <div class="bg-white absolute hidden flex-col rounded mt-1 -ml-8 p-2 text-sm w-48 border-2 border-gray-100" id="inbound-dropdown">
+                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Free, Pro, & Team</a>
+                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Enterprise Cloud</a>
+                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Enterprise Server 3.4</a>
+                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Enterprise Server 3.3</a>
+                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Enterprise Server 3.2</a>
+                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Enterprise Server 3.1</a>
+                                <a href="#" class="px-2 py-1 hover:bg-blue-600">GitHub AE</a>
+                            </div>
+                        </li>
+                        <li class="mx-4 my-6 md:my-0 lg:block hidden cursor-pointer">
+                            <div id="outbound_">Outbound Events</div>
+                            <div class="bg-white absolute hidden flex-col rounded mt-1 -ml-8 p-2 text-sm w-48 border-2 border-gray-100" id="outbound-dropdown">
+                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Free, Pro, & Team</a>
+                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Enterprise Cloud</a>
+                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Enterprise Server 3.4</a>
+                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Enterprise Server 3.3</a>
+                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Enterprise Server 3.2</a>
+                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Enterprise Server 3.1</a>
+                                <a href="#" class="px-2 py-1 hover:bg-blue-600">GitHub AE</a>
+                            </div>
+                            
+                        </li>
+                        <li class="mx-4 my-6 md:my-0 lg:block hidden cursor-pointer">
+                            <div id="upcoming_">Upcoming Events</div>
+                            <div class="bg-white absolute hidden flex-col rounded mt-1 -ml-8 p-2 text-sm w-48 border-2 border-gray-100" id="upcoming-dropdown">
+                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Free, Pro, & Team</a>
+                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Enterprise Cloud</a>
+                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Enterprise Server 3.4</a>
+                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Enterprise Server 3.3</a>
+                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Enterprise Server 3.2</a>
+                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Enterprise Server 3.1</a>
+                                <a href="#" class="px-2 py-1 hover:bg-blue-600">GitHub AE</a>
+                            </div>
+                        </li>
+                        <li class="mx-4 my-6 md:my-0 lg:block hidden cursor-pointer">
+                            <div id="resort_">RESORT & BOAT</div>
+                            <div class="bg-white absolute hidden flex-col rounded mt-1 -ml-8 p-2 text-sm w-48 border-2 border-gray-100" id="resort-dropdown">
+                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Free, Pro, & Team</a>
+                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Enterprise Cloud</a>
+                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Enterprise Server 3.4</a>
+                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Enterprise Server 3.3</a>
+                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Enterprise Server 3.2</a>
+                                <a href="#" class="px-2 py-1 hover:bg-blue-600">Enterprise Server 3.1</a>
+                                <a href="#" class="px-2 py-1 hover:bg-blue-600">GitHub AE</a>
+                            </div>
+                        </li>
+                        <li class="mx-4 my-6 md:my-0 lg:block hidden cursor-pointer">
+                            ABOUT
+                        </li>
+                        <li class="mx-4 my-6 md:my-0 lg:block hidden cursor-pointer">
+                            CONTACT
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </nav>
+        
+
+    </header>
+    <div class="hidden pt-16 transition-all ease-in duration-500" id="mob_navbar">
+        <ul class="lg:hidden flex flex-col ml-4">
+            <li class="mx-4 my-4 lg:my-0">
+                HOME
+            </li>
+            <li class="mx-4 my-4 lg:my-0">
+                <div class="flex items-center justify-between cursor-pointer" >
+                    Inbound Events
+                    <ion-icon id="mob-inbound-btn" class="mr-1" name="add-outline"></ion-icon>
+                </div> 
+                <div class="mt-4 hidden flex-row" id="mob-inbound-dropdown">
+                    <div class="bg-gray-200 -mx-8 flex flex-col p-2 text-sm w-full">
+                        <a href="#" class="px-8 py-1 hover:bg-gray-200">English</a>
+                        <a href="#" class="px-8 py-1 hover:bg-gray-200">Spanish</a>
+                        <a href="#" class="px-8 py-1 hover:bg-gray-200">Chinese</a>
+                    </div>
+                    <div class="bg-gray-200 w-full -mr-4">
+                        
+                    </div>
+                </div>
+            </li>
+            <li class="mx-4 my-4 lg:my-0">
+                <div class="flex items-center justify-between cursor-pointer" >
+                    Outbound Events
+                    <ion-icon id="mob-outbound-btn" class="mr-1" name="add-outline"></ion-icon>
+                </div> 
+                <div class="mt-4 hidden flex-row" id="mob-outbound-dropdown">
+                    <div class="bg-gray-200 -mx-8 flex flex-col p-2 text-sm w-full">
+                        <a href="#" class="px-8 py-1 hover:bg-gray-200">English</a>
+                        <a href="#" class="px-8 py-1 hover:bg-gray-200">Spanish</a>
+                        <a href="#" class="px-8 py-1 hover:bg-gray-200">Chinese</a>
+                    </div>
+                    <div class="bg-gray-200 w-full -mr-4">
+                        
+                    </div>
+                </div>
+            </li>
+            <li class="mx-4 my-4 lg:my-0">
+                <div class="flex items-center justify-between cursor-pointer" >
+                    Upcoming Events
+                    <ion-icon id="mob-upcoming-btn" class="mr-1" name="add-outline"></ion-icon>
+                </div> 
+                <div class="mt-4 hidden flex-row" id="mob-upcoming-dropdown">
+                    <div class="bg-gray-200 -mx-8 flex flex-col p-2 text-sm w-full">
+                        <a href="#" class="px-8 py-1 hover:bg-gray-200">English</a>
+                        <a href="#" class="px-8 py-1 hover:bg-gray-200">Spanish</a>
+                        <a href="#" class="px-8 py-1 hover:bg-gray-200">Chinese</a>
+                    </div>
+                    <div class="bg-gray-200 w-full -mr-4">
+                        
+                    </div>
+                </div>
+            </li>
+            <li class="mx-4 my-4 lg:my-0">
+                <div class="flex items-center justify-between cursor-pointer" >
+                    RESORT & BOAT
+                    <ion-icon id="mob-resort-btn" class="mr-1" name="add-outline"></ion-icon>
+                </div> 
+                <div class="mt-4 hidden flex-row" id="mob-resort-dropdown">
+                    <div class="bg-gray-200 -mx-8 flex flex-col p-2 text-sm w-full">
+                        <a href="#" class="px-8 py-1 hover:bg-gray-200">English</a>
+                        <a href="#" class="px-8 py-1 hover:bg-gray-200">Spanish</a>
+                        <a href="#" class="px-8 py-1 hover:bg-gray-200">Chinese</a>
+                    </div>
+                    <div class="bg-gray-200 w-full -mr-4">
+                        
+                    </div>
+                </div>
+            </li>
+            <li class="mx-4 my-4 lg:my-0">
+                ABOUT
+            </li>
+            <li class="mx-4 my-4 lg:my-0">
+                CONTACT
+            </li>
+        </ul>
+    </div>
+    <!-- <br class="md:hidden block">
+    <br class="md:hidden block"> -->
+
+    <main>
+        <section id="hero_image" class="relative h-2/3 lg:pt-0 pt-6 lg:h-screen flex flex-col  lg:flex-row lg:items-center">
+            <!--Hero Image-->
+            <div class="cwc-full absolute">
+                <span class="cwc-full absolute"></span>
+                <img class="cwc-full object-cover" src="../assets/tourgroupbd-home..jpg" alt="hero" />
+            </div>
+            <!--Hero Copy-->
+            <div class="relative lg:mx-56 mx-24 lg:pt-0 pt-16">
+                <div>
+                    <h1 class="text-xl text-blue-500">Lets' Explore With TGB</h1>
+                </div>
+                
+                <div class="lg:mt-96 mt-16">
+                    <button class="rounded-full bg-red-400">MORE ABOUT US</button>
+                </div>
+                
+            </div>
+        </section>
+        <section id="events" class="relative lg:pt-0 pt-6 lg:h-screen h-96 flex flex-col  lg:flex-row lg:items-center">
+            <div class="cwc-full absolute z-[-1]">
+                <span class="cwc-full absolute"></span>
+                <img class="cwc-full object-cover" src="../assets/cottage-home-floral-bg2.png" alt="headphone hero" />
+            </div>
+            <div class="relative w-full lg:-mt-56 mt-8">
+                <div class="grid grid-cols-8 gap-4">
+                    <div class="col-span-1"></div>
+                    <div class="col-span-6">
+                        <p class="text-center text-6xl font-semibold text-green-600">EVENTS</p>
+                        <p class="mt-4 mb-6 text-center text-[16px]">We are very happy to welcome you for travelling with us. We have events in every week end and government holidays. Moreover we can also arrange special events for groups.</p>
+                        <div class="flex flex-col autoplay">
+                            <div class="mx-7 hover:opacity-100 opacity-75 cursor-pointer transition ease-in-out hover:-translate-y-4 ">
+                                <img src="../assets/slider/tourgroupbd-saintmartin-events.jpg" alt="" class="saint_martin w-full h-48">
+                                <p class="text-center mt-4">Saint Martin</p>
+                            </div>
+                            <div class="mx-7 hover:opacity-100 opacity-75 cursor-pointer transition ease-in-out hover:-translate-y-4 ">
+                                <img src="../assets/slider/tourgroupbd-bandarban-1.jpg" alt="" class="bandarban w-full h-48">
+                                <p class="text-center mt-4">Bandarban</p>
+                            </div>
+                            <div class="mx-7 hover:opacity-100 opacity-75 cursor-pointer transition ease-in-out hover:-translate-y-4 ">
+                                <img src="../assets/slider/tourgroupbd-coxs-bazar.jpg" alt="" class="cox w-full h-48">
+                                <p class="text-center mt-4">Cox's Bazar</p>
+                            </div>
+                            <div class="mx-7 hover:opacity-100 opacity-75 cursor-pointer transition ease-in-out hover:-translate-y-4 ">
+                                <img src="../assets/slider/tourgroupbd-rangamati-events.jpg" alt="" class="rangamati w-full h-48">
+                                <p class="text-center mt-4">Rangamati</p>
+                            </div>
+                            <div class="mx-7 hover:opacity-100 opacity-75 cursor-pointer transition ease-in-out hover:-translate-y-4 ">
+                                <img src="../assets/slider/tourgroupbd-sajek.jpg" alt="" class="sajek w-full h-48">
+                                <p class="text-center mt-4">Sajek</p>
+                            </div>
+                            <div class="mx-7 hover:opacity-100 opacity-75 cursor-pointer transition ease-in-out hover:-translate-y-4 ">
+                                <img src="../assets/slider/tourgroupbd-sundarbans-events.jpg" alt="" class="sundarbans w-full h-48">
+                                <p class="text-center mt-4">Sundarbans</p>
+                            </div>
+                            <div class="mx-7 hover:opacity-100 opacity-75 cursor-pointer transition ease-in-out hover:-translate-y-4 ">
+                                <img src="../assets/slider/tourgroupbd-sylhet.jpg" alt="" class="sylehet w-full h-48">
+                                <p class="text-center mt-4">Sylhet</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </section>
+        <section class="lg:-mt-24 mt-56 relative lg:pt-0 pt-6 h-screen flex flex-col  lg:flex-row lg:items-center">
+            <div class="cwc-full absolute z-[-1]">
+                <span class="cwc-full absolute"></span>
+                <img class="cwc-full object-cover" src="../assets/cottage-home-floral-bg2.png" alt="hero" />
+            </div>
+            
+
+            <div class="relative w-full lg:-mt-24 mt-8">
+                <div class="flex lg:flex-row flex-col justify-between items-center">
+                    <div class="lg:ml-64">
+                        <img class="lg:w-[450px] w-[250px] lg:h-[700px] h-[400px]" src="../assets/tourgroupbd-image-2.jpg" alt="hero" />
+                    </div>
+                    <div class="sm:block hidden lg:ml-20 lg:mt-0 mt-16 lg:mx-0 mx-16">
+                        <p class="lg:text-7xl text-4xl text-emerald-500 font-semibold lg:w-3/4">Affection for
+                            Traveling?</p>
+                        <p class="mt-12 lg:w-96 mx-2">Tour Group Bangladesh belongs to those who have affection for traveling and who are individual travelers. We would be delighted to provide support to those who really love to roam around, no matter where the destination is. Let’s discover home first & then the earth!</p>
+                        <div class="mt-12 mx-2">
+                            <button class="px-6 py-3 bg-red-500 text-white font-semibold rounded">MORE ABOUT US</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </section>
+    </main>
+    <div class="sm:hidden block bg-gray-50 sm:mb-0 mb-12">
+        <div class="lg:ml-20 -mt-96 lg:mx-0 mx-16">
+            <p class="lg:text-7xl text-4xl text-emerald-500 font-semibold lg:w-3/4">Affection for
+                Traveling?</p>
+            <p class="mt-12 lg:w-96 mx-2">Tour Group Bangladesh belongs to those who have affection for traveling and who are individual travelers. We would be delighted to provide support to those who really love to roam around, no matter where the destination is. Let’s discover home first & then the earth!</p>
+            <div class="mt-12 mx-2">
+                <button class="px-6 py-3 bg-red-500 text-white font-semibold rounded">MORE ABOUT US</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="bg-white">
+            <div class="grid grid-cols-8 gap-4">
+                <div class="col-span-1"></div>
+                <div class="col-span-6">
+                    <hr>
+                </div>
+                <div></div>
+            </div>
+        </div>
+        <div class="bg-white md:mt-20 mt-14">
+            <div class="grid grid-cols-8 gap-4">
+                <div class="col-span-1"></div>
+                <div class="col-span-6">
+                    <p class="text-center sm:text-6xl text-3xl font-semibold text-green-600">OUR COTTAGE</p>
+                    <p class="mt-4 mb-6 text-center text-[16px]">We are very happy to welcome you to our cottages. We have cottages at Sajek, St. Martin, Srimangal and a boat (Sindabad Tori) for our guests comfort. Moreover we can also arrange special accommodation for groups.</p> 
+                    <div class="flex lg:flex-row flex-col justify-between items-center mt-16 sm:mx-0 mx-16">
+                        <div class="mx-8 lg:my-0 my-8">
+                            <div class="relative">
+                                <a class="absolute inset-0 z-10 bg-green-100 opacity-0 hover:opacity-100 bg-opacity-90 duration-300">
+                                    <p class="text-center text-2xl text-black font-semibold mt-36">Lushai Cottage</p>
+                                </a>
+                                <a href="#" class="">
+                                    <div class="">
+                                        <img src="../assets/cottage/tourgroupbd-lushai-cottage.jpg"  class="w-[540px] h-auto" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mx-8 my-12">
+                                <p class="text-2xl text-green-700">Lushai Cottage (Sajek)</p>
+                                <p class="text-base text-green-700 mt-4 md:w-96 w-48">A hill view cottage in Sajek Rangamati. From here you can see the beauty of cloud. This cottage is made by wood a bamboo so people like it very much.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mx-8 lg:my-0 my-8">
+                            <div class="relative">
+                                <a class="absolute inset-0 z-10 bg-green-100 opacity-0 hover:opacity-100 bg-opacity-90 duration-300">
+                                  <p class="text-center text-2xl text-black font-semibold mt-36">Adrika Eco Cottage</p>
+                                  <!-- <p  class="mx-auto">Description</p> -->
+                                </a>
+                                <a href="#" class="">
+                                    <div class="">
+                                        <img src="../assets/cottage/tourgroupbd-adrika-eco-cottage.jpg"  class="w-[540px] h-auto " alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mx-8 my-12">
+                                <p class="text-2xl text-green-700">Adrika Eco Cottage (Sajek)</p>
+                                <p class="text-base text-green-700 mt-4 md:w-96 w-48">A hill view cottage at Sajek. Just come and see the Infinity earth from Adrika Eco cottage Sajek.
+
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <!-- <div></div> -->
+            </div>
+        </div>
+    </div>
+    <div class="bg-green-800 md:mt-28 md:mx-40 my-40">
+        <div class="flex md:flex-row flex-col justify-between items-center h-52 mx-16">
+            <div>
+                <h1 id="num1">250</h1>
+                <h3>Trips Done</h3>
+            </div>
+            <div>
+                <h1 id="num2">12</h1>
+                <h3>years working</h3>
+            </div>
+            <div>
+                <h1 id="num3">7</h1>
+                <h3>days a week</h3>
+            </div>
+            <div>
+                <h1 id="num4">24</h1>
+                <h3>hours a day</h3>
+            </div>
+        </div>
+    </div>
+    <div class="bg-green-800 mt-28">
+        <div class="flex md:flex-row flex-col justify-between items-center h-96">
+            <P class="text-center mx-[390px]">footer</P>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../slick/slick.min.js"></script>
+    <script src="../count-up-me/res/countMe/countMe.min.js"></script>
+    <script>
+        window.onload = ()=>{
+            // $(selector).countMe(delay,speed)
+            $("#num1").countMe(40,65);
+            $("#num2").countMe(30, 30);
+            $("#num3").countMe(40, 50);
+            $("#num4").countMe(100,200);
+         }
+        </script>
+        <script type="text/javascript">
+    
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-36251023-1']);
+            _gaq.push(['_setDomainName', 'jqueryscript.net']);
+            _gaq.push(['_trackPageview']);
+            
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+            
+        </script>
+    <script>
+        $(document).ready(function(){
+            $('.autoplay').slick({
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                arrows: false,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                infinite: false,
+                // centerMode: true,
+                responsive: [
+                    {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                    },
+                    {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                    },
+                    {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                    }
+                ]
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $("#inbound_").mouseover(function(){
+                $("#inbound-dropdown").removeClass("hidden");
+                $("#inbound-dropdown").addClass("flex");
+            
+            });
+            $("#inbound_").mouseout(function(){
+                $("#inbound-dropdown").removeClass("flex");
+                $("#inbound-dropdown").addClass("hidden");
+            });
+
+            $("#outbound_").mouseover(function(){
+                $("#outbound-dropdown").removeClass("hidden");
+                $("#outbound-dropdown").addClass("flex");
+            
+            });
+            $("#outbound_").mouseout(function(){
+                $("#outbound-dropdown").removeClass("flex");
+                $("#outbound-dropdown").addClass("hidden");
+            });
+            $("#upcoming_").mouseover(function(){
+                $("#upcoming-dropdown").removeClass("hidden");
+                $("#upcoming-dropdown").addClass("flex");
+            
+            });
+            $("#upcoming_").mouseout(function(){
+                $("#upcoming-dropdown").removeClass("flex");
+                $("#upcoming-dropdown").addClass("hidden");
+            });
+            $("#resort_").mouseover(function(){
+                $("#resort-dropdown").removeClass("hidden");
+                $("#resort-dropdown").addClass("flex");
+            
+            });
+            $("#resort_").mouseout(function(){
+                $("#resort-dropdown").removeClass("flex");
+                $("#resort-dropdown").addClass("hidden");
+            });
+            //slider
+            
+        });
+    </script>
+</body>
+</html>

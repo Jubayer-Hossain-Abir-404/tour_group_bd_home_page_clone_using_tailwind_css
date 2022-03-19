@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cwc-transition {
+  @apply transition-all duration-300 ease-out;
+}
+
+.cwc-scale {
+  @apply transform scale-105;
+}
+.cwc-scale:hover {
+  @apply scale-100;
+}
+.cwc-scale-up {
+  @apply transform;
+}
+.cwc-scale-up:hover {
+  @apply scale-125;
+}
+
+.cwc-full {
+  @apply w-full h-full;
+}
+
+
+
+@screen lg {
+  .stickyNav {
+    @apply bg-white py-2 m-0 px-8 !important;
+  }
+  .stickyNav #logo img {
+    @apply h-10 !important;
+  }
+}
+
