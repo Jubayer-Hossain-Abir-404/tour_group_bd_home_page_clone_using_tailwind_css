@@ -297,13 +297,13 @@
                     <p class="mt-4 mb-6 text-center text-[16px]">We are very happy to welcome you to our cottages. We have cottages at Sajek, St. Martin, Srimangal and a boat (Sindabad Tori) for our guests comfort. Moreover we can also arrange special accommodation for groups.</p> 
                     <div class="flex lg:flex-row flex-col justify-between items-center mt-16 sm:mx-0 mx-16">
                         <div class="mx-8 lg:my-0 my-8">
-                            <div class="relative">
-                                <a class="absolute inset-0 z-10 bg-green-100 opacity-0 hover:opacity-100 bg-opacity-90 duration-300">
+                            <div class="relative overflow-hidden">
+                                <a class="absolute inset-0 z-10 bg-green-100 opacity-0 hover:opacity-100 bg-opacity-90 duration-300 shadow-2xl" id="overlay1_">
                                     <p class="text-center text-2xl text-black font-semibold mt-36">Lushai Cottage</p>
                                 </a>
                                 <a href="#" class="">
                                     <div class="">
-                                        <img src="../assets/cottage/tourgroupbd-lushai-cottage.jpg"  class="w-[540px] h-auto" alt="">
+                                        <img src="../assets/cottage/tourgroupbd-lushai-cottage.jpg"  class="w-[540px] h-auto" id="overlay_img1_" alt="">
                                     </div>
                                 </a>
                             </div>
@@ -316,7 +316,7 @@
                         </div>
                         <div class="mx-8 lg:my-0 my-8">
                             <div class="relative">
-                                <a class="absolute inset-0 z-10 bg-green-100 opacity-0 hover:opacity-100 bg-opacity-90 duration-300">
+                                <a class="absolute inset-0 z-10 bg-green-100 opacity-0 hover:opacity-100 bg-opacity-90 duration-300" id="">
                                   <p class="text-center text-2xl text-black font-semibold mt-36">Adrika Eco Cottage</p>
                                   <!-- <p  class="mx-auto">Description</p> -->
                                 </a>
@@ -471,6 +471,18 @@
             $("#resort_").mouseout(function(){
                 $("#resort-dropdown").removeClass("flex");
                 $("#resort-dropdown").addClass("hidden");
+            });
+            $("#overlay1_").mouseover(function(){
+                $("#overlay_img1_").addClass("transform");
+                $("#overlay_img1_").addClass("scale-125");
+                $("#overlay_img1_").addClass("ease-in-out");
+            
+            });
+            $("#overlay1_").mouseout(function(){
+                $("#overlay_img1_").removeClass("transform");
+                $("#overlay_img1_").removeClass("scale-125");
+                $("#overlay_img1_").removeClass("ease-in-out");
+            
             });
             //slider
             
